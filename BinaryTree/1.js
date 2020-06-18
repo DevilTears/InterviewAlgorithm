@@ -18,8 +18,9 @@ const root = {
   }
 }
 
-// 先根遍历函数 所有遍历函数的入参都是树的根结点对象
-function rootMap(params) {
+// 所有遍历函数的入参都是树的根结点对象
+// 先序遍历函数
+function preOrder(root) {
   // 递归边界，root 为空
   if(!root) {
     return
@@ -34,7 +35,7 @@ function rootMap(params) {
 }
 
 // 中序遍历
-function rootMap(params) {
+function inOrder(root) {
   // 递归边界，root 为空
   if(!root) {
     return
@@ -49,7 +50,7 @@ function rootMap(params) {
 }
 
 // 后序遍历
-function rootMap(params) {
+function postOrder(root) {
   // 递归边界，root 为空
   if(!root) {
     return
